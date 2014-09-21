@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+     "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class table="tb_mb_songtype" name="com.ouyang.musicbar.domain.SongType">
+    		<id name="id" type="java.lang.String" column="ID" length="10">
+    			<generator class="sequence">
+    				<param name="sequence">TB_MB_SONGTYPE_SEQUENCE</param>
+    			</generator>
+    		</id>
+    		<property name="typeName" type="java.lang.String" column="TYPE_NAME" length="20"/>
+    	</class>
+    </hibernate-mapping>

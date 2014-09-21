@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	 <!-- 编码方式 -->  
+	<constant name="struts.i18n.encoding" value="utf-8"/>
+	<!-- 国际化资源文件的基本名称 -->   
+	<constant name="struts.custom.i18n.resources" value="globals/oyms"/>
+	
+	<include file="com/ouyang/common/resource/struts/struts-common.xml" />
+	
+	<include file="com/ouyang/ua/resource/struts/struts-ua.xml" />
+	
+	<include file="com/ouyang/report/resource/struts/struts-report.xml" />
+	
+	<include file="com/ouyang/bbs/resource/struts/struts-bbs.xml" />
+	
+	<include file="com/ouyang/musicbar/resource/struts/struts-musicbar.xml" />
+	
+	<!-- 是否缓存浏览器静态内容: 当应用处于开发阶段时,每次请求都获得服务器的最新响应，则可设置该属性为false-->  
+	<constant name="struts.serve.static.browserCache" value="false"/> 
+	<!-- 国际化信息是否自动加载 -->  
+	<constant name="struts.i18n.reload" value="true"/>
+	<!--申明struts.objectFactory为Spring的对象池构建工厂 -->
+	<constant name="struts.objectFactory" value="spring" />
+	<!-- 处于开发阶段 最好把开发模式打开 会打印更多的详细错误信息 -->  
+    <constant name="struts.devMode" value="true"/>  
+    <!-- struts.xml文件当被修改后 重新加载，开发阶段最好打开 -->  
+    <constant name="struts.configuration.xml.reload" value="true"/> 
+ 	<!-- 设置临时保存的路径 -->  
+	<constant name="struts.multipart.saveDir" value="c:\\day\\"/> 
+	
+    <!-- 设置文件上传的大小 ,这个值必须大于等于拦截器中的值 -->  
+	
+	
+</struts>

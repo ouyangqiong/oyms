@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<treeConfig>
+	<trees>
+		<tree className="treeRoot" type="ul">
+			<noleaf	type="li"  level="1"	parentIndex="0"	index="1" className="noleaf">
+				<treeTitle	className="treeTitle"	type="span">系统管理</treeTitle>
+				<treeTxt	className="treeTxt"	type="ul">
+					<leaf	className="leaf"	type="li"	toPage="">用户管理</leaf>
+					<leaf	className="leaf"	type="li"	toPage="">角色管理</leaf>
+					<leaf	className="leaf"	type="li"	toPage="">权限管理</leaf>
+					<leaf	className="leaf"	type="li"	toPage="menuEvent!toMenuMgr.action">菜单管理</leaf>
+				</treeTxt>
+			</noleaf>
+			<noleaf	className="noleaf"	type="li"	level="1"	parentIndex="0"	index="2">
+				<treeTitle	className="treeTitle"	type="span">分系统</treeTitle>
+				<treeTxt	className="treeTxt"	type="ul">
+					<leaf	className="leaf"	type="li"	toPage="">系统集成项目管理学习</leaf>
+				</treeTxt>
+			</noleaf>
+			<noleaf	className="noleaf"	type="li"	level="2"	parentIndex="2"	index="1">
+				<treeTitle	className="treeTitle"	type="span">欧阳</treeTitle>
+				<treeTxt	className="treeTxt"	type="ul">
+					<leaf	className="leaf"	type="li"	toPage="">个人博客</leaf>
+				</treeTxt>
+			</noleaf>
+			<noleaf	className="noleaf"	type="li"	level="2"	parentIndex="2"	index="2">
+				<treeTitle	className="treeTitle"	type="span">冒冒</treeTitle>
+				<treeTxt	className="treeTxt"	type="ul">
+					<leaf	className="leaf"	type="li"	toPage="">个人博客</leaf>
+				</treeTxt>
+			</noleaf>
+			<leaf	className="leaf"	type="li"	toPage="">www.ouyangonline.com</leaf>
+		</tree>
+	</trees>	
+</treeConfig>

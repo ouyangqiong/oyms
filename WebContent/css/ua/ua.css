@@ -1,0 +1,111 @@
+#modalShade{
+    display: none;
+    /*filter:alpha(opacity=50);*/
+    background: #3B3013;
+    position: fixed; 
+    left: 0; 
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    z-index: 100;
+}
+.registerModal {
+    display: none;
+    position: absolute;
+    background: #FFFFFF;
+    color: #000000;
+    padding:0px;
+    border:1px solid #6A6A6D;
+    float: left;
+    font-size: 1.2em;
+    height: 375px;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    margin-left:-250px;
+    margin-top:-187px;
+    text-align:center;
+    z-index: 200;
+}
+.formTable{
+	width:400px;
+	padding-top:0px;
+	text-align:center;
+	margin:50px 50px 50px;
+}
+.centerDiv{
+	font: bold 40px Arial, Helvetica, sans-serif;
+	vertical-align:middle;
+	line-height:400px
+}
+#menuId{
+	width:5%;
+}
+#mainContent{
+	width:80%;
+	height:100%;
+	background-color:white;
+	margin:0 auto;
+	z-index:50;
+}
+#loContDiv{
+	width:80%;
+	height:100%;
+	background-color:white;
+	margin:0 auto;
+	z-index:50;
+}
+#loginTb{
+	position:relative;
+	padding:5pt 26pt;
+}
+#loAdDiv{
+	width:100%;
+	height:100%;
+	background-color:#D9EEFE;
+}
+#sspMainDiv{
+	position:relative;
+	left:5px;
+	width:100%;
+	height:100%;
+	top:0px;
+	border:1px solid #D8DAD1;
+}
+#west{
+	position:relative;
+	left:252px;
+}
+#treecCgDiv{
+	position:relative;
+	text-align:center;
+	left:19%;
+}
+#leafCfgDiv{
+	position:absolute;
+	width:400px;
+	height:100px;
+	left:50%;
+	margin-left:-200px;
+	top:44%;
+	display:none;
+	
+}
+#noleafCfgDiv{
+	position:absolute;
+	width:400px;
+	height:100px;
+	left:50%;
+	margin-left:-200px;
+	top:44%;
+	display:none;
+}
+.blueBorder{
+	border:1px solid blue;
+}
+.redBorder{
+	border:1px solid red;
+}
+.formalBorder{
+	border:1px solid #D8DAD1;
+}

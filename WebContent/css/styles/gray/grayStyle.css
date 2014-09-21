@@ -1,0 +1,21 @@
+body{
+	font:14px Arial, Helvetica, sans-serif;
+	font-weight:normal;
+}
+.oyms-layout{
+	width:100%;
+}
+.oyms-layout caption{
+	width:100%;
+	font-weight:bold;
+	background:url(images/header.png) repeat-x;
+	height:20px;
+	margin:0px;
+	text-align:left;
+}
+.oyms-layout .oyms-layout-content{
+	width:100%;
+}
+.oyms-header{
+	background: url(images/default.png) repeat-x;
+}

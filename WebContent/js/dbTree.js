@@ -1,0 +1,19 @@
+function getSubTree(parentId){
+	$.ajax({
+		type:"POST",
+		url:"dbTree!getSubTree.action",
+		contentType:"application/x-www-form-urlencoded;charset=utf-8",
+		dataType:'json',
+		data:{'parentId':parentId},
+		error:function(){
+		 	alert("加载菜单树失败！");
+		},
+		success:function(data){
+			alert(data);
+			alert(evel("("+data+")"));
+		},
+		complete:function(XHR,textStatus){
+			XHR=null;
+		}
+	});
+}

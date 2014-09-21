@@ -1,0 +1,50 @@
+ul,li{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	text-align:left;
+	line-height:150%;
+}
+.treeTitle{
+	position:relative;
+	margin-left:0px;
+	padding-left:20px;
+	background:url(../images/folder.gif) no-repeat 0px 50%;
+	cursor:pointer;
+}
+.treeTxt{
+	display:none;
+}
+.leaf{
+	position:relative;
+	margin-left:20px;
+	padding-left:20px;
+	line-height:150%;
+	background:url(../images/tree-level.gif) no-repeat 0% 50%;
+	cursor:pointer;
+}
+.leaf:hover{
+	background:#F1F5F1;
+}
+.noleaf{
+	position:relative;
+	margin-left:0px;
+	padding-left:20px;
+}
+#treeDiv{
+	position:relative;
+	text-align:left;
+	height:500px;
+	width:100%;
+	white-space:nowrap;
+	overflow:auto;
+	left:0px;
+	top:0px;
+	border:1px solid #D8DAD1;
+}
+p{
+	line-height:150%;
+	text-indent:20px;
+}
+
+

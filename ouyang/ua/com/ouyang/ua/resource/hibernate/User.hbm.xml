@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+     "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class table="tb_ua_user" name="com.ouyang.ua.domain.User">
+    		<id name="id" type="java.lang.String" column="ID" length="50">
+    			<generator class="sequence">
+    				<param name="sequence">TB_USER_SEQUENCE</param>
+    			</generator>
+    		</id>
+    		<property name="loginName" type="java.lang.String" column="loginname"/>
+    		<property name="userName" type="java.lang.String" column="username"/>
+    		<property name="password" type="java.lang.String" column="password"/>
+    	</class>
+    </hibernate-mapping>

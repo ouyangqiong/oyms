@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans 
+							http://www.springframework.org/schema/beans/spring-beans.xsd 
+							http://www.springframework.org/schema/context 
+							http://www.springframework.org/schema/context/spring-context.xsd 
+							http://www.springframework.org/schema/aop
+							http://www.springframework.org/schema/aop/spring-aop.xsd" 
+		xmlns:tx="http://www.springframework.org/schema/tx" 
+		xmlns:aop="http://www.springframework.org/schema/aop" 
+		xmlns:context="http://www.springframework.org/schema/context" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns="http://www.springframework.org/schema/beans">
+
+	<!-- <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean"> 
+		<property name="jndiName" value="jndi/ouyms"/> </bean>
+		 -->
+		<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+ 	 		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+  			<property name="url" value="jdbc:oracle:thin:@localhost:1521:orcl" />
+  			<property name="username" value="oyms" />
+ 			 <property name="password" value="ouyang" />
+		 </bean>	
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean"> 
+		<property name="dataSource">
+			<ref bean="dataSource"/>
+		</property>
+		<property name="mappingLocations">
+  			 <list>
+  				<value>classpath:/com/ouyang/ua/resource/hibernate/*.hbm.xml</value>  
+  				<value>classpath:/com/ouyang/musicbar/resource/hibernate/*.hbm.xml</value>    
+  			 </list>
+ 			 </property>
+		 <property name="hibernateProperties">
+  			 <props>
+  				<prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop>
+   				<prop key="hibernate.show_sql">true</prop>
+   				<prop key="hibernate.jdbc.batch_size">0</prop>
+   				<prop key="hibernate.format_sql">false</prop>
+   				<prop key="hibernate.dbcp.maxActive">100</prop>
+   				<prop key="hibernate.dbcp.whenExhaustedAction">2</prop>
+   				<prop key="hibernate.dbcp.maxIdle">10</prop>
+   				<prop key="hibernate.use_sql_comments">true</prop>
+  			 </props>
+  		</property>
+	</bean>
+	<!-- DAO control -->
+	<bean id="baseDao" class="com.ouyang.common.dao.BaseDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<!-- transaction control -->
+	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="transactionProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean" abstract="true">
+		<property name="transactionManager" >
+			<ref bean="transactionManager"/>
+		</property>
+		<property name="proxyTargetClass">
+			<value>true</value>
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="save*">PROPAGATION_REQUIRED</prop>
+				<prop key="query*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="update*">PROPAGATION_REQUIRED</prop>
+				<prop key="delete*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+	<!-- i18n -->
+	<!-- 
+	<bean name="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename" value="oyms"/>
+		<property name="useCodeAsDefaultMessage" value="true"/>
+	</bean>
+	
+	<bean name="localeChangeInterceptor" class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+	</bean>
+	<bean name="defaultUrlMapping" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping">
+		<property name="interceptors" ref="localeChangeInterceptor"/>
+		<property name="order" value="1"/>
+	</bean>
+	<bean name="localResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver"/>
+	 -->
+</beans>

@@ -1,0 +1,15 @@
+.se_body{
+	background:#FFFFFF;
+	text-align:center
+}
+.se_main{
+	text-align:center;
+	background:#FFFFFF;
+}
+.se_main table{
+	margin:0 auto;
+}
+.contentTd{
+	width:100%;
+	height:100%;
+}

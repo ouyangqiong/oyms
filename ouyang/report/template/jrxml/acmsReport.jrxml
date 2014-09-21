@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="acmsReport" language="groovy" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
+	<property name="ireport.zoom" value="1.6105100000000026"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="parameter1" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="acLegMatDate" class="java.util.Date">
+		<fieldDescription><![CDATA[acLegMatDate]]></fieldDescription>
+	</field>
+	<field name="acOrgMatDate" class="java.util.Date">
+		<fieldDescription><![CDATA[acOrgMatDate]]></fieldDescription>
+	</field>
+	<field name="acRegMatDate" class="java.util.Date">
+		<fieldDescription><![CDATA[acRegMatDate]]></fieldDescription>
+	</field>
+	<field name="accountTitle" class="java.lang.String">
+		<fieldDescription><![CDATA[accountTitle]]></fieldDescription>
+	</field>
+	<field name="bankNo" class="java.lang.String">
+		<fieldDescription><![CDATA[bankNo]]></fieldDescription>
+	</field>
+	<field name="basicAccTag" class="java.lang.String">
+		<fieldDescription><![CDATA[basicAccTag]]></fieldDescription>
+	</field>
+	<field name="basicCode" class="java.lang.String">
+		<fieldDescription><![CDATA[basicCode]]></fieldDescription>
+	</field>
+	<field name="capCurr" class="java.lang.String">
+		<fieldDescription><![CDATA[capCurr]]></fieldDescription>
+	</field>
+	<field name="capReg" class="java.lang.String">
+		<fieldDescription><![CDATA[capReg]]></fieldDescription>
+	</field>
+	<field name="cfoMobilePhone" class="java.lang.String">
+		<fieldDescription><![CDATA[cfoMobilePhone]]></fieldDescription>
+	</field>
+	<field name="cfoNameCfoId" class="java.lang.String">
+		<fieldDescription><![CDATA[cfoNameCfoId]]></fieldDescription>
+	</field>
+	<field name="cfoTelNo" class="java.lang.String">
+		<fieldDescription><![CDATA[cfoTelNo]]></fieldDescription>
+	</field>
+	<field name="cityTaxRegNo" class="java.lang.String">
+		<fieldDescription><![CDATA[cityTaxRegNo]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="cntyTaxRegNo" class="java.lang.String">
+		<fieldDescription><![CDATA[cntyTaxRegNo]]></fieldDescription>
+	</field>
+	<field name="currentDate" class="java.util.Date">
+		<fieldDescription><![CDATA[currentDate]]></fieldDescription>
+	</field>
+	<field name="cusNm" class="java.lang.String">
+		<fieldDescription><![CDATA[cusNm]]></fieldDescription>
+	</field>
+	<field name="customerId" class="java.lang.String">
+		<fieldDescription><![CDATA[customerId]]></fieldDescription>
+	</field>
+	<field name="depositorTy" class="java.lang.String">
+		<fieldDescription><![CDATA[depositorTy]]></fieldDescription>
+	</field>
+	<field name="generalAccTag" class="java.lang.String">
+		<fieldDescription><![CDATA[generalAccTag]]></fieldDescription>
+	</field>
+	<field name="legReare" class="java.lang.String">
+		<fieldDescription><![CDATA[legReare]]></fieldDescription>
+	</field>
+	<field name="legalId" class="java.lang.String">
+		<fieldDescription><![CDATA[legalId]]></fieldDescription>
+	</field>
+	<field name="legalMobilePhone" class="java.lang.String">
+		<fieldDescription><![CDATA[legalMobilePhone]]></fieldDescription>
+	</field>
+	<field name="legalPerso1" class="java.lang.String">
+		<fieldDescription><![CDATA[legalPerso1]]></fieldDescription>
+	</field>
+	<field name="legalRepreId" class="java.lang.String">
+		<fieldDescription><![CDATA[legalRepreId]]></fieldDescription>
+	</field>
+	<field name="legalTelNo" class="java.lang.String">
+		<fieldDescription><![CDATA[legalTelNo]]></fieldDescription>
+	</field>
+	<field name="maturityDate" class="java.util.Date">
+		<fieldDescription><![CDATA[maturityDate]]></fieldDescription>
+	</field>
+	<field name="noOfRegAddCode" class="java.lang.String">
+		<fieldDescription><![CDATA[noOfRegAddCode]]></fieldDescription>
+	</field>
+	<field name="officePhone" class="java.lang.String">
+		<fieldDescription><![CDATA[officePhone]]></fieldDescription>
+	</field>
+	<field name="orgno" class="java.lang.String">
+		<fieldDescription><![CDATA[orgno]]></fieldDescription>
+	</field>
+	<field name="parentcompany" class="java.lang.String">
+		<fieldDescription><![CDATA[parentcompany]]></fieldDescription>
+	</field>
+	<field name="pcoLegalId" class="java.lang.String">
+		<fieldDescription><![CDATA[pcoLegalId]]></fieldDescription>
+	</field>
+	<field name="pcoLegalPerId" class="java.lang.String">
+		<fieldDescription><![CDATA[pcoLegalPerId]]></fieldDescription>
+	</field>
+	<field name="pcoLegalPerType" class="java.lang.String">
+		<fieldDescription><![CDATA[pcoLegalPerType]]></fieldDescription>
+	</field>
+	<field name="pcoLegalPersonNm" class="java.lang.String">
+		<fieldDescription><![CDATA[pcoLegalPersonNm]]></fieldDescription>
+	</field>
+	<field name="perCodePrAc" class="java.lang.String">
+		<fieldDescription><![CDATA[perCodePrAc]]></fieldDescription>
+	</field>
+	<field name="postCode" class="java.lang.String">
+		<fieldDescription><![CDATA[postCode]]></fieldDescription>
+	</field>
+	<field name="proveFileSecCategray" class="java.lang.String">
+		<fieldDescription><![CDATA[proveFileSecCategray]]></fieldDescription>
+	</field>
+	<field name="proveFileSecNo" class="java.lang.String">
+		<fieldDescription><![CDATA[proveFileSecNo]]></fieldDescription>
+	</field>
+	<field name="proveFileSecValidDate" class="java.lang.String">
+		<fieldDescription><![CDATA[proveFileSecValidDate]]></fieldDescription>
+	</field>
+	<field name="regAdd" class="java.lang.String">
+		<fieldDescription><![CDATA[regAdd]]></fieldDescription>
+	</field>
+	<field name="regAddPostCode" class="java.lang.String">
+		<fieldDescription><![CDATA[regAddPostCode]]></fieldDescription>
+	</field>
+	<field name="regId" class="java.lang.String">
+		<fieldDescription><![CDATA[regId]]></fieldDescription>
+	</field>
+	<field name="regType" class="java.lang.String">
+		<fieldDescription><![CDATA[regType]]></fieldDescription>
+	</field>
+	<field name="scopeOfBus" class="java.lang.String">
+		<fieldDescription><![CDATA[scopeOfBus]]></fieldDescription>
+	</field>
+	<field name="specAcctFlag" class="java.lang.String">
+		<fieldDescription><![CDATA[specAcctFlag]]></fieldDescription>
+	</field>
+	<field name="specialAccTag" class="java.lang.String">
+		<fieldDescription><![CDATA[specialAccTag]]></fieldDescription>
+	</field>
+	<field name="street" class="java.lang.String">
+		<fieldDescription><![CDATA[street]]></fieldDescription>
+	</field>
+	<field name="tempAccTag" class="java.lang.String">
+		<fieldDescription><![CDATA[tempAccTag]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="842" splitType="Stretch">
+			<textField>
+				<reportElement  x="125" y="102" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cusNm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="475" y="109" width="78" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{officePhone}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="125" y="131" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{regAdd}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="477" y="160" width="97" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{postCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="125" y="158" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{street}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="475" y="137" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{regAddPostCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="453" y="76" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{customerId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="126" y="187" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{depositorTy}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="330" y="187" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{legalId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="477" y="186" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{acOrgMatDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="196" y="202" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{legalPerso1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="357" y="201" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{legReare}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="476" y="200" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{legalTelNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="198" y="215" width="90" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{legalRepreId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="358" y="216" width="91" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{acLegMatDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="475" y="215" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{legalMobilePhone}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="164" y="279" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{capCurr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="297" y="280" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{capReg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="474" y="280" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{noOfRegAddCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="126" y="293" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{scopeOfBus}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="124" y="306" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{regType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="312" y="307" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{regId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="475" y="310" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{acRegMatDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="123" y="320" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{proveFileSecCategray}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="311" y="321" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{proveFileSecNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="474" y="323" width="93" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{proveFileSecValidDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="123" y="335" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cntyTaxRegNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="394" y="336" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cityTaxRegNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="162" y="404" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{specAcctFlag}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="434" y="389" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{maturityDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="162" y="418" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cfoNameCfoId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="346" y="404" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cfoTelNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="472" y="403" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cfoMobilePhone}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="197" y="459" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{parentcompany}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="196" y="473" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{perCodePrAc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="418" y="472" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pcoLegalId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="197" y="486" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pcoLegalPersonNm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="196" y="502" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pcoLegalPerType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="419" y="501" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pcoLegalPerId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="128" y="531" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{orgno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="127" y="546" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bankNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="127" y="558" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{accountTitle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="196" y="573" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{basicCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="475" y="572" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{currentDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="124" y="363" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{basicAccTag}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="236" y="362" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{generalAccTag}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="330" y="363" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{specialAccTag}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement  x="419" y="362" width="100" height="14"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tempAccTag}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="struts-common" namespace="/console" extends="struts-default">
+		<interceptors>
+			<interceptor name="timeoutControl" class="com.ouyang.common.interceptor.OymsInterceptor"></interceptor>
+			<interceptor-stack name="oymsStack">
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="timeoutControl"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="oymsStack"></default-interceptor-ref>
+		<global-results>
+			<result name="login">/WEB-INF/jsp/ouyang/ua/ua_login.jsp</result>
+			<result name="input">/WEB-INF/jsp/ouyang/ua/ua_login.jsp</result>
+			<result name="timeoutpage">/WEB-INF/jsp/ouyang/common/logout.jsp</result>
+		</global-results>
+	</package>
+</struts>

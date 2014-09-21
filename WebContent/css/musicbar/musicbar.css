@@ -1,0 +1,28 @@
+#lrcArea{
+	width:100%;
+	position:relative;
+}
+#lrcArea td { 
+	color:#000000;
+}
+#lrcAreaDiv td, #lrcAreaDiv font {
+	font-size: 16px;
+}
+#lrcAreaDiv{
+	width:100%;
+}
+.word_green{
+	color:#7DA600;
+	font-size:12px;
+}
+
+td{
+	white-space:nowrap;
+}
+#copyright{
+	text-align:center;
+	padding-bottom:1px;
+	font-size:9pt;
+	color:#6D6D6D;
+	background-color:#F1F2EF;
+}

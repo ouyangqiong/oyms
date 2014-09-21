@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="struts-oyms" namespace="/console" extends="struts-common">
+		<action name="loginAction" class="com.ouyang.ua.action.LoginAction">
+			<result name="uaMain">/WEB-INF/jsp/ouyang/ua/ua_main.jsp</result>
+		</action>
+		<action name="menuEvent" class="com.ouyang.ua.action.MenuEventAction">
+			<result name="menuMain">/WEB-INF/jsp/ouyang/ua/main.jsp</result>
+			<result name="menuMgr">/WEB-INF/jsp/ouyang/ua/xmlMenu/menuMgr.jsp</result>
+			<result name="seMain">/WEB-INF/jsp/ouyang/se/se_main.jsp</result>
+			<result name="reportMain">/WEB-INF/jsp/ouyang/report/report_main.jsp</result>
+			<result name="musicbar" type="redirectAction" >
+				<param name="actionName">song!musicMain.action</param>
+				<param name="namespace">/musicbar</param>
+			</result>
+			<result name="bbsMain" type="redirectAction" >
+				<param name="actionName">bbs!bbsMain.action</param>
+				<param name="namespace">/bbs</param>
+			</result>
+		</action>
+		<action name="treeConfig" class="com.ouyang.ua.action.TreeConfigAction">
+		</action>
+		<action name="dbTree" class="com.ouyang.ua.action.DBTreeAction">
+		</action>
+	</package>
+</struts>

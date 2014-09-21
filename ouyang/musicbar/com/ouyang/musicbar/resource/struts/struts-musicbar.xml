@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="struts-musicbar" namespace="/musicbar" extends="struts-common">
+		<action name="song" class="com.ouyang.musicbar.action.SongAction">
+			<result name="musicbar">/WEB-INF/jsp/ouyang/musicbar/music_main.jsp</result>
+			<result name="tryListen">/WEB-INF/jsp/ouyang/musicbar/music_tryListen.jsp</result>
+			<result name="navigation">/WEB-INF/jsp/ouyang/musicbar/music_navigation.jsp</result>
+			<result name="songSort">/WEB-INF/jsp/ouyang/musicbar/music_songSort.jsp</result>
+		</action>
+	</package>
+</struts>
